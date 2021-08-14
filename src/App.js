@@ -1,6 +1,4 @@
 import React from 'react'
-import StoriesContainer from './containers/StoriesContainer'
+import { StoriesContainer } from './containers/StoriesContainer'
 
-const App = () => <StoriesContainer />
-
-export default App
+export const App = () => <StoriesContainer />

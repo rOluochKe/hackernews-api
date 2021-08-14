@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Story from '../components/Story'
+import { Story } from '../components/Story'
 import { getStoryIds } from '../services/hnApi'
 import { useInfiniteScroll } from '../hooks/useInfiniteScroll'
 import {
@@ -7,7 +7,7 @@ import {
   StoriesContainerWrapper,
 } from '../styles/StoriesContainerStyles'
 
-const StoriesContainer = () => {
+export const StoriesContainer = () => {
   const { count } = useInfiniteScroll()
   const [storyIds, setStoryids] = useState([])
 
@@ -27,5 +27,3 @@ const StoriesContainer = () => {
     </>
   )
 }
-
-export default StoriesContainer

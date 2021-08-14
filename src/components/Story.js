@@ -9,7 +9,7 @@ import {
   StoryMetaElement,
 } from '../styles/StoryStyles'
 
-const Story = ({ storyId }) => {
+export const Story = ({ storyId }) => {
   const [story, setStory] = useState({})
 
   useEffect(() => {
@@ -35,5 +35,3 @@ const Story = ({ storyId }) => {
     </StoryWrapper>
   ) : null
 }
-
-export default Story
